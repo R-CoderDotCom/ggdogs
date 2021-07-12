@@ -3,10 +3,9 @@ The geom you always wished for adding dogs to ggplot2. This package is part of t
 The source code of this package is based on geom_image from ggimage.
 
 
-<!--<p align="center">
- <img src="https://user-images.githubusercontent.com/67192157/105871532-b0a48700-5ff9-11eb-9371-ecd915ded374.png">
-</p>-->
-
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/67192157/125283840-13c07680-e319-11eb-8344-389d6c45d4da.png">
+</p>
 
 
 + Follow me on [Twitter](https://twitter.com/RCoderWeb)
