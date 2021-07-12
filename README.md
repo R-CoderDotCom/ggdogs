@@ -23,7 +23,7 @@ remotes::install_github("R-CoderDotCom/ggdogs@main")
 ```
 
 
-## Available cats
+## Available dogs
 
 There are 15 dogs available:
 
