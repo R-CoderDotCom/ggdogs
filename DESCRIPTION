@@ -1,0 +1,13 @@
+Package: ggdogs
+Title: The Geom you Always Wished for Adding Dogs to ggplot2
+Version: 1.0
+Authors@R: 
+    person("R", "CODER",
+           role = c("aut", "cre"), email = "support.rcoder@protonmail.com")
+Description: This package adds dogs as points in ggplot2
+License: GPL-3
+Encoding: UTF-8
+Imports: ggplot2, png, magick, methods
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
