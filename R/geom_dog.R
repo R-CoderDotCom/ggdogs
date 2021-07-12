@@ -145,7 +145,6 @@ Geomdog <- ggplot2::ggproto("Geomdog", ggplot2::Geom,
 imageGrob <- function(x, y, size, img, by, hjust, colour, alpha, image_fun, angle, asp = 1) {
   if (!methods::is(img, "magick-image")) {
       filename <- system.file(paste0(img, ".png"), package = "ggdogs")
-      print(filename)
       img <- magick::image_read(filename)
 
     asp <- getAR2(img)/asp
