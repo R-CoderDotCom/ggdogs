@@ -25,11 +25,12 @@ remotes::install_github("R-CoderDotCom/ggdogs@main")
 
 ## Available dogs
 
-There are 15 dogs available:
+There are 25 dogs available:
 
 ```r
 "doge" (default) "doge_strong" "chihuahua" "eyes" "gabe" "glasses" "tail" "surprised"
-"thisisfine" "hearing" "pug" "ears" "husky" "husky_2" "chilaquil"
+"thisisfine" "hearing" "pug" "ears" "husky" "husky_2" "chilaquil"  "santa", "bryan",
+"vinny" "jake" "lucy" "puppie" "goofy" "snoopy" "scooby" "suspicious"
 ```
 
 ## Some examples
@@ -40,17 +41,19 @@ grid <- expand.grid(1:5, 3:1)
 df <- data.frame(x = grid[, 1],
                  y = grid[, 2],
                  image = c("doge", "doge_strong", "chihuahua", "eyes", "gabe", "glasses", "tail", "surprised",
-"thisisfine", "hearing", "pug", "ears", "husky", "husky_2", "chilaquil"))
+                           "thisisfine", "hearing", "pug", "ears", "husky", "husky_2", "chilaquil", "santa", "bryan", "vinny", "jake",
+                           "lucy", "puppie", "goofy", "snoopy", "scooby", "suspicious"))
                            
 library(ggplot2)
 ggplot(df) +
  geom_dog(aes(x, y, dog = image), size = 5) +
-    xlim(c(0.25, 5.5)) + 
-    ylim(c(0.25, 3.5))
+ geom_label(aes(x, y - 0.25, label = image), size = 4) +
+ xlim(c(0.25, 5.5)) + 
+ ylim(c(0.25, 3.5))
 ```
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/67192157/125280624-8d566580-e315-11eb-8d60-d8076d8ddf9c.png">
+ <img src="https://user-images.githubusercontent.com/67192157/136852320-b2088483-a77b-45b8-855e-ec72e60b82c5.png">
 </p>
 
 
