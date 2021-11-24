@@ -36,7 +36,7 @@ There are 25 dogs available:
 ## Some examples
 
 ```r
-grid <- expand.grid(1:5, 3:1)
+grid <- expand.grid(1:5, 5:1)
 
 df <- data.frame(x = grid[, 1],
                  y = grid[, 2],
@@ -45,11 +45,12 @@ df <- data.frame(x = grid[, 1],
                            "lucy", "puppie", "goofy", "snoopy", "scooby", "suspicious"))
                            
 library(ggplot2)
+library(ggdogs)
 ggplot(df) +
- geom_dog(aes(x, y, dog = image), size = 5) +
+ geom_dog(aes(x, y, dog = image), size = 3) +
  geom_label(aes(x, y - 0.25, label = image), size = 4) +
  xlim(c(0.25, 5.5)) + 
- ylim(c(0.25, 3.5))
+ ylim(c(0.25, 5.5))
 ```
 
 <p align="center">
